@@ -2,7 +2,7 @@ def shortify(word):
 
     length = len(word)
 
-    if length < 10:
+    if length <= 10:
         print(word)
     else:
         first = word[0]
