@@ -3,12 +3,12 @@ def main():
     total = [0,0,0]
     numSol = 0
     for x in range(int(size)):
-        sum = 0
+        cando = 0
         userSol = input()
-        for i in userSol.split(" "):
-            sum += int(i)
+        userInt = list(map(int, userSol.split(" ") ))
+        cando = sum(userInt)
         
-        if sum > 1:
+        if cando> 1:
             numSol += 1
     
     print(numSol)
