@@ -1,19 +1,12 @@
 def getWinners(n, k, scores):
-    pos = 0
+    total = 0
     kthScore = scores[k-1]
 
-    if kthScore == 0:
-        return 0
-    else:
-        for i in range(k-1, n-1):
-            if scores[i] < kthScore:
-                pos = i
-                break
+    for score in scores:
+        if (score >= kthScore) and score != 0:
+            total += 1 
 
-        if pos == 0:
-            return n
-        else:
-            return pos
+    return total
             
 
 def main():
