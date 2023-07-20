@@ -1,5 +1,3 @@
-import math
-
 def getDominos(m, n):
     return int((m*n)/2)
 
