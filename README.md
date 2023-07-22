@@ -1,2 +1,2 @@
 # Competitive-Programming Code Repo
-Git repository for Competitve programing problems form Codeforces and LeetCode
+Git repository for Competitive programming problems form Codeforces and LeetCode
