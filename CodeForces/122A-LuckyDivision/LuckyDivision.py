@@ -1,11 +1,12 @@
+import itertools
+
 def almostLucky(number):
-    luckyNumber = {'7', '4'}
-    print(int(number)%4, int(number)%7)
-    if set(list(number)) == luckyNumber:
-        return "YES"
-    elif (int(number)%4 == 0) or (int(number)%7 == 0):
-        return "YES"
+    luckyNumber = [4, 7, 47, 74, 447, 477, 744, 774, 747, 474]
+    for x in luckyNumber:
+        if int(number)%x == 0:
+            return "YES"
     return "NO"
+    
             
 
 def main():
